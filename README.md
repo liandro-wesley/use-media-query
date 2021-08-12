@@ -11,7 +11,7 @@
 npm install --save @liandro-wesley/use-media-query
 
 # YARN
-yarn install @liandro-wesley/use-media-query
+yarn add @liandro-wesley/use-media-query
 ```
 
 ## Usage
