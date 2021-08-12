@@ -1,23 +1,22 @@
 import * as React from 'react';
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState<{
-    counter: number;
-  }>({
-    counter: 0
-  });
+
+const useMediaQuery = (breakpoint: string) => {
+  const [match, setMatch] = React.useState<Boolean>(false);
 
   React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++;
-      setState({counter})
-    }, 1000)
+    function changeMatch() {
+      const { matches } = window.matchMedia(breakpoint)
+      setMatch(matches);
+    }
+    changeMatch();
+    window.addEventListener('resize', changeMatch)
     return () => {
-      window.clearInterval(interval);
+      window.addEventListener('resize', changeMatch)
     };
-  }, []);
+  }, [breakpoint]);
 
-  return counter;
+  return match;
 };
+
+export default useMediaQuery;

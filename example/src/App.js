@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { useMyHook } from 'use-media-query'
+import useMediaQuery from 'use-media-query'
 
 const App = () => {
-  const example = useMyHook()
+  const isMobile = useMediaQuery('(max-width: 48rem)')
   return (
     <div>
-      {example}
+      You are on: {isMobile ? 'Mobile' : 'Desktop' }
     </div>
   )
 }

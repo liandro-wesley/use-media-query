@@ -1,4 +1,4 @@
-# use-media-query
+# UseMediaQuery
 
 > A package for you to use in your projects with React JS or Next JS. Basically, it provides a boolean return for the set breakpoints
 
@@ -7,30 +7,38 @@
 ## Install
 
 ```bash
+# NPM
 npm install --save use-media-query
+
+# YARN
+yarn install use-media-query
 ```
 
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React from 'react'
 
-import { useMyHook } from 'use-media-query'
+import useMediaQuery from 'use-media-query'
 
-const Example = () => {
-  const example = useMyHook()
+const Example: React.FC = () => {
+  const isMobile = useMediaQuery('(max-width: 425px)')
   return (
     <div>
-      {example}
+      You are on: {isMobile ? 'Mobile' : 'Desktop'}
+      <span>If this was helpful to you, could you please give this repository a star?</span>
     </div>
   )
 }
 ```
+
+
+## Follow me
+
+[My Blog](https://liandrowesley.dev)
 
 ## License
 
 MIT © [liandro-wesley](https://github.com/liandro-wesley)
 
 ---
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
