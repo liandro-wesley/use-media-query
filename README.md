@@ -8,10 +8,10 @@
 
 ```bash
 # NPM
-npm install --save use-media-query
+npm install --save @liandro-wesley/use-media-query
 
 # YARN
-yarn install use-media-query
+yarn install @liandro-wesley/use-media-query
 ```
 
 ## Usage
