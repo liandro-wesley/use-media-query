@@ -2,7 +2,7 @@
 
 > A package for you to use in your projects with React JS or Next JS. Basically, it provides a boolean return for the set breakpoints
 
-[![NPM](https://img.shields.io/npm/v/use-media-query.svg)](https://www.npmjs.com/package/@liandro-wesley/use-media-query) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@liandro-wesley/use-media-query.svg)](https://www.npmjs.com/package/@liandro-wesley/use-media-query) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 

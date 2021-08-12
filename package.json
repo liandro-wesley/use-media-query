@@ -1,6 +1,6 @@
 {
   "name": "@liandro-wesley/use-media-query",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A package for you to use in your projects with React JS or Next JS. Basically, it provides a boolean return for the set breakpoints",
   "author": "liandro-wesley",
   "license": "MIT",
